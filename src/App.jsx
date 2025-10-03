@@ -1,8 +1,16 @@
+// src/App.jsx
+import { useState } from "react";
+import Editor from "./components/Editor";
+import Preview from "./components/Preview";
+
 function App() {
+  const [markdownText, setMarkdownText] = useState("Hello Markdown");
+
   return (
-    <div className="h-screen flex items-center justify-center bg-red-500 text-white text-3xl">
-      If you see me in red, Tailwind works ✅
-    </div>
+    <main className="h-screen flex flex-col md:flex-row">
+      <Editor markdownText={markdownText} setMarkdownText={setMarkdownText} />
+      <Preview markdownText={markdownText} />
+    </main>
   );
 }
 

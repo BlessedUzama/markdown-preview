@@ -1,4 +1,3 @@
-// src/components/Preview.jsx
 import React from "react";
 import { marked } from "marked";
 

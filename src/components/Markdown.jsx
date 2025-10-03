@@ -1,9 +1,7 @@
-// src/components/Markdown.jsx
 import { marked } from "marked";
 import hljs from "highlight.js";
 import { markedHighlight } from "marked-highlight";
-import "highlight.js/styles/github.css"; // 👈 theme
-
+import "highlight.js/styles/github.css"; 
 marked.use(
   markedHighlight({
     langPrefix: "hljs language-",

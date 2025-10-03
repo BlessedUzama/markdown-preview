@@ -1,4 +1,3 @@
-// src/components/Editor.jsx
 import React from "react";
 
 function Editor({ markdownText, setMarkdownText }) {
